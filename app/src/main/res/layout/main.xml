@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	//Andrew Muir
+	//Matric number - S1511342
+
+
+	<LinearLayout
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+		android:weightSum="1">
+
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Select feed to display"/>
+
+		<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/Rgroup"
+			android:layout_height="match_parent"
+			android:layout_width="wrap_content">
+
+			<RadioButton
+				android:id="@+id/Roadworks"
+				android:checked="true"
+				android:layout_height="match_parent"
+				android:layout_width="wrap_content"
+				android:text="Road works"
+				android:onClick="onRadioButtonClicked"/>
+			<RadioButton
+				android:id="@+id/Planned"
+				android:layout_height="match_parent"
+				android:layout_width="wrap_content"
+				android:text="Planned road works"
+				android:onClick="onRadioButtonClicked"/>
+
+		</RadioGroup>
+
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:text="Enter specific date"
+			android:layout_marginTop="50dp"/>
+
+		<EditText
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/Day"/>
+
+
+		<Button
+			android:id="@+id/Button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Enter"/>
+
+
+		<TextView
+			android:id="@+id/Displaytext"
+			android:text="Parsed data will appear below"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			/>
+
+		<ListView
+			android:layout_height="141dp"
+			android:layout_width="wrap_content"
+			android:id="@+id/ListView"
+			android:layout_weight="1" />
+
+	</LinearLayout>
+
+</ScrollView>
+
+
